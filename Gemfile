@@ -18,4 +18,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber-rails', :require => false
   gem 'factory_girl_rails'
+  gem 'spork', '~> 1.0rc'
+  gem 'mocha'
+  gem 'pry'
+  gem 'database_cleaner'
+  gem 'launchy'
 end
