@@ -23,4 +23,13 @@ group :development, :test do
   gem 'pry'
   gem 'database_cleaner'
   gem 'launchy'
+
+  #guard stuff
+  gem 'guard'
+  gem 'guard-spork'
+  gem 'guard-bundler'
+  gem 'guard-cucumber'
+  gem 'guard-rspec'
+
+
 end
