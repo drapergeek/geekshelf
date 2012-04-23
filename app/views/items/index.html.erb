@@ -1,0 +1,16 @@
+<h2>All Items</h2>
+<table class = "items">
+  <thead>
+    <th>Name</th>
+  </thead>
+
+  <% @items.each do |item| %>
+    <tbody>
+      <td class="item_name"> <%= link_to item.name, item %></td>
+      <td> <%= link_to "Download" %> </td>
+    </tbody>
+  <% end %>
+
+
+</table>
+

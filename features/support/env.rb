@@ -6,6 +6,7 @@ Spork.prefork do
   # need to restart spork for it take effect.
 
   require 'cucumber/rails'
+  require 'factory_girl/step_definitions'
 
   Capybara.default_selector = :css
 
@@ -18,6 +19,7 @@ Spork.prefork do
   end
 
   Cucumber::Rails::Database.javascript_strategy = :truncation
+  World FactoryGirl::Syntax::Methods
 
 end
 

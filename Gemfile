@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-
 gem 'sqlite3'
+gem 'jquery-rails'
+gem "twitter-bootstrap-rails"
 
 
 group :assets do
@@ -11,7 +12,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
 group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
@@ -19,6 +19,7 @@ group :development, :test do
   gem 'cucumber-rails', :require => false
   gem 'factory_girl_rails'
   gem 'spork', '~> 1.0rc'
+  gem 'shoulda'
   gem 'mocha'
   gem 'pry'
   gem 'database_cleaner'
@@ -31,6 +32,4 @@ group :development, :test do
   gem 'guard-cucumber'
   gem 'guard-rspec'
   gem 'growl'
-
-
 end
